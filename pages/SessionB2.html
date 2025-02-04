@@ -11,13 +11,47 @@
     <link rel="preload" as="font" href="assets/fonts/Inter-UI-upright.var.woff2" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" as="font" href="assets/fonts/Inter-UI.var.woff2" type="font/woff2" crossorigin="anonymous">
     <style>
-      .bg-img {
-        background-image: url('assets/img/committee_bg.jpg'); /* 背景图片路径 */
-        background-size: cover; /* 确保图片覆盖整个容器 */
-        background-position: relative; /* 图片居中 */
-        background-repeat: no-repeat; /* 防止图片重复 */
-        width: 100%; /* 容器宽度 */
-        height: 50vh; /* 容器高度，100vh 表示视口高度 */
+      /* 設定圖片外層容器 */
+      .hero {
+        position: relative;
+        width: 100%;
+        height: auto;
+        background: none;
+      }
+
+      /* 確保圖片可自適應 */
+      .backgroundimg {
+        width: 100%;
+        height: auto;
+        display: block;
+        background: none;
+      }
+
+      /* 文字區塊（覆蓋在圖片上） */
+      .overlay {
+        position: absolute;
+        top: 50%;  /* 垂直置中 */
+        left: 50%; /* 水平置中 */
+        transform: translate(-50%, -50%); /* 精準置中 */
+        width: 100%;
+        text-align: center;
+      }
+      .overlay::before,
+      .overlay::after {
+        content: none !important;
+        background: none !important;
+        display: none !important;
+      }
+
+      /* 標題樣式 */
+      .title {
+        font-size: 6vw;
+        font-weight: 700;
+        color: rgb(251, 251, 253);
+        -webkit-text-stroke: 1px rgb(56, 61, 68);
+        text-shadow: 5px 5px 5px rgba(56, 61, 68);
+        font-family: 'Oswald', sans-serif;
+        
       }
     </style>
   </head>
@@ -88,44 +122,11 @@
 
     <section class="bg-primary-3 header-inner p-0 jarallax position-relative o-hidden" data-overlay>
       <!-- <img class ="backgroundimg" src="assets/img/Shidabainian.jpg" alt="SHIDABAINIAN"> -->
-      <div class="bg-img">
-        <h1 style="
-        text-align: center; 
-        color: rgb(251, 251, 253); 
-        padding-top: 100px; 
-        font-size: 60px;
-        -webkit-text-stroke: 1px rgb(56, 61, 68);
-        text-shadow: 5px 5px 5px rgba(56, 61, 68);">SESSION B2</h1>
-        <!-- <img class ="backgroundimg" src="assets/img/Shidabainian.jpg" alt="SHIDABAINIAN"> -->
-        <!-- <div class="row my-3 text-light">
-          <div class="col">
-            <nav aria-label="breadcrumb">
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item">
-                  <a href="index.html">Home</a>
-                </li>
-                <li class="breadcrumb-item">
-                  <a href="#">Elements</a>
-                </li>
-                <li class="breadcrumb-item active" aria-current="page">Avatars</li>
-              </ol>
-            </nav>
-          </div>
+      <div class="hero">
+        <img class="backgroundimg" src="assets/img/committee_bg.jpg" alt="committee">
+        <div class="overlay">
+          <p class="title">SESSION B2</p>
         </div>
-        <div class="row my-4 my-md-6 text-light" data-aos="fade-up">
-          <div class="col-lg-9 col-xl-6">
-            <h1 class="display-4">Avatars</h1>
-            <p class="lead mb-0">A set of CSS utility classes to format single avatars and overlapping groups of avatars.</p>
-          </div>
-        </div>
-        <div class="alert alert-primary mb-5">
-          <div class="d-flex">
-            <img class="icon bg-primary" src="assets/img/icons/theme/files/selected-file.svg" alt="selected-file icon" data-inject-svg />
-            <div class="ml-2 flex-grow-1">
-              This page demonstrates Avatars functionality, <a target="_blank" href="documentation/css-avatars.html">See Documentation</a> for a detailed technical explanation.
-            </div>
-          </div>
-        </div> -->
       </div>
       <!-- <div class="decoration right middle-y scale-4">
         <img class="bg-primary" src="assets/img/decorations/deco-blob-3.svg" alt="deco-blob-3 decoration" data-inject-svg />

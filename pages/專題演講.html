@@ -11,13 +11,45 @@
     <link rel="preload" as="font" href="assets/fonts/Inter-UI-upright.var.woff2" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" as="font" href="assets/fonts/Inter-UI.var.woff2" type="font/woff2" crossorigin="anonymous">
     <style>
-      .bg-img {
-        background-image: url('assets/img/committee_bg.jpg'); /* 背景图片路径 */
-        background-size: cover; /* 确保图片覆盖整个容器 */
-        background-position: relative; /* 图片居中 */
-        background-repeat: no-repeat; /* 防止图片重复 */
-        width: 100%; /* 容器宽度 */
-        height: 50vh; /* 容器高度，100vh 表示视口高度 */
+      /* 設定圖片外層容器 */
+      .hero {
+        position: relative;
+        width: 100%;
+        height: auto;
+        background: none;
+      }
+
+      /* 確保圖片可自適應 */
+      .backgroundimg {
+        width: 100%;
+        height: auto;
+        display: block;
+        background: none;
+      }
+
+      /* 文字區塊（覆蓋在圖片上） */
+      .overlay {
+        position: absolute;
+        top: 50%;  /* 垂直置中 */
+        left: 50%; /* 水平置中 */
+        transform: translate(-50%, -50%); /* 精準置中 */
+        width: 100%;
+        text-align: center;
+      }
+      .overlay::before,
+      .overlay::after {
+        content: none !important;
+        background: none !important;
+        display: none !important;
+      }
+
+      /* 標題樣式 */
+      .title {
+        font-size: 6vw;
+        font-weight: 700;
+        color: rgb(251, 251, 253);
+        font-family: 'Oswald', sans-serif;
+        
       }
     </style>
   </head>
@@ -88,8 +120,11 @@
 
     <section class="bg-primary-3 header-inner p-0 jarallax position-relative o-hidden" data-overlay>
       <!-- <img class ="backgroundimg" src="assets/img/Shidabainian.jpg" alt="SHIDABAINIAN"> -->
-      <div class="bg-img">
-        <h1 style="text-align: center;color: rgb(251, 251, 253);padding-top: 90px;font-size: 60px;">專題演講</h1>
+      <div class="hero">
+        <img class="backgroundimg" src="assets/img/committee_bg.jpg" alt="committee">
+        <div class="overlay">
+          <p class="title">專題演講</p>
+        </div>
       </div>
       <!-- <div class="decoration right middle-y scale-4">
         <img class="bg-primary" src="assets/img/decorations/deco-blob-3.svg" alt="deco-blob-3 decoration" data-inject-svg />
