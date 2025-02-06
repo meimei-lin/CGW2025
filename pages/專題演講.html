@@ -10,48 +10,6 @@
     <link href="assets/css/theme.css" rel="stylesheet" type="text/css" media="all" />
     <link rel="preload" as="font" href="assets/fonts/Inter-UI-upright.var.woff2" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" as="font" href="assets/fonts/Inter-UI.var.woff2" type="font/woff2" crossorigin="anonymous">
-    <style>
-      /* 設定圖片外層容器 */
-      .hero {
-        position: relative;
-        width: 100%;
-        height: auto;
-        background: none;
-      }
-
-      /* 確保圖片可自適應 */
-      .backgroundimg {
-        width: 100%;
-        height: auto;
-        display: block;
-        background: none;
-      }
-
-      /* 文字區塊（覆蓋在圖片上） */
-      .overlay {
-        position: absolute;
-        top: 50%;  /* 垂直置中 */
-        left: 50%; /* 水平置中 */
-        transform: translate(-50%, -50%); /* 精準置中 */
-        width: 100%;
-        text-align: center;
-      }
-      .overlay::before,
-      .overlay::after {
-        content: none !important;
-        background: none !important;
-        display: none !important;
-      }
-
-      /* 標題樣式 */
-      .title {
-        font-size: 6vw;
-        font-weight: 700;
-        color: rgb(251, 251, 253);
-        font-family: 'Oswald', sans-serif;
-        
-      }
-    </style>
   </head>
 
   <body>
@@ -101,14 +59,110 @@
                     </div>
                   </div>
                 </li>
-                 <li class="nav-item dropdown">
-                  <a href="Contact-Pacific.html" class="nav-link dropdown-toggle"  aria-expanded="false" aria-haspopup="true">會議註冊</a>
+                <li class="nav-item dropdown">
+                  <a href="會議註冊.html" class="nav-link dropdown-toggle"  aria-expanded="false" aria-haspopup="true">會議註冊</a>
+                  <!-- <div class="dropdown-menu row">
+                    <div class="col-auto" data-dropdown-content>
+                      <div class="dropdown-grid-menu">
+                        <div class="dropdown">
+                          <a href="#" class="dropdown-item dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">
+                            <span>Grid Layouts</span>
+                            <img class="icon bg-dark opacity-20" src="assets/img/icons/interface/arrow-caret.svg" alt="arrow-caret interface icon" data-inject-svg />
+                          </a>
+                          <div class="dropdown-menu row">
+                            <div class="col-auto" data-dropdown-content>
+                              <div class="dropdown-grid-menu"><a href="portfolio-2-columns.html" class="dropdown-item fade-page">2 Columns</a><a href="portfolio-3-columns.html" class="dropdown-item fade-page">3 Columns</a><a href="portfolio-4-columns.html" class="dropdown-item fade-page">4 Columns</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="dropdown">
+                          <a href="#" class="dropdown-item dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">
+                            <span>Project Layouts</span>
+                            <img class="icon bg-dark opacity-20" src="assets/img/icons/interface/arrow-caret.svg" alt="arrow-caret interface icon" data-inject-svg />
+                          </a>
+                          <div class="dropdown-menu row">
+                            <div class="col-auto" data-dropdown-content>
+                              <div class="dropdown-grid-menu"><a href="portfolio-case-study.html" class="dropdown-item fade-page">Case Study</a><a href="portfolio-single-sidebar.html" class="dropdown-item fade-page">Sidebar</a><a href="portfolio-single-slider.html" class="dropdown-item fade-page">Slider</a>
+                                <a
+                                href="portfolio-single-parallax.html" class="dropdown-item fade-page">Parallax</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div> -->
                 </li>
                 <li class="nav-item dropdown">
-                  <a href="Contact-Pacific.html" class="nav-link dropdown-toggle"  aria-expanded="false" aria-haspopup="true">論文徵稿</a>
+                  <a href="論文徵稿.html" class="nav-link dropdown-toggle"  aria-expanded="false" aria-haspopup="true">論文徵稿</a>
+                  <!-- <div class="dropdown-menu row">
+                    <div class="col-auto" data-dropdown-content>
+                      <div class="dropdown-grid-menu">
+                        <div class="dropdown">
+                          <a href="#" class="dropdown-item dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">
+                            <span>Grid Layouts</span>
+                            <img class="icon bg-dark opacity-20" src="assets/img/icons/interface/arrow-caret.svg" alt="arrow-caret interface icon" data-inject-svg />
+                          </a>
+                          <div class="dropdown-menu row">
+                            <div class="col-auto" data-dropdown-content>
+                              <div class="dropdown-grid-menu"><a href="portfolio-2-columns.html" class="dropdown-item fade-page">2 Columns</a><a href="portfolio-3-columns.html" class="dropdown-item fade-page">3 Columns</a><a href="portfolio-4-columns.html" class="dropdown-item fade-page">4 Columns</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="dropdown">
+                          <a href="#" class="dropdown-item dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">
+                            <span>Project Layouts</span>
+                            <img class="icon bg-dark opacity-20" src="assets/img/icons/interface/arrow-caret.svg" alt="arrow-caret interface icon" data-inject-svg />
+                          </a>
+                          <div class="dropdown-menu row">
+                            <div class="col-auto" data-dropdown-content>
+                              <div class="dropdown-grid-menu"><a href="portfolio-case-study.html" class="dropdown-item fade-page">Case Study</a><a href="portfolio-single-sidebar.html" class="dropdown-item fade-page">Sidebar</a><a href="portfolio-single-slider.html" class="dropdown-item fade-page">Slider</a>
+                                <a
+                                href="portfolio-single-parallax.html" class="dropdown-item fade-page">Parallax</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div> -->
                 </li>
                 <li class="nav-item dropdown">
-                  <a href="Contact-Pacific.html" class="nav-link dropdown-toggle"  aria-expanded="false" aria-haspopup="true">交通資訊</a>
+                  <a href="交通資訊.html" class="nav-link dropdown-toggle"  aria-expanded="false" aria-haspopup="true">交通資訊</a>
+                  <!-- <div class="dropdown-menu row">
+                    <div class="col-auto" data-dropdown-content>
+                      <div class="dropdown-grid-menu">
+                        <div class="dropdown">
+                          <a href="#" class="dropdown-item dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">
+                            <span>Grid Layouts</span>
+                            <img class="icon bg-dark opacity-20" src="assets/img/icons/interface/arrow-caret.svg" alt="arrow-caret interface icon" data-inject-svg />
+                          </a>
+                          <div class="dropdown-menu row">
+                            <div class="col-auto" data-dropdown-content>
+                              <div class="dropdown-grid-menu"><a href="portfolio-2-columns.html" class="dropdown-item fade-page">2 Columns</a><a href="portfolio-3-columns.html" class="dropdown-item fade-page">3 Columns</a><a href="portfolio-4-columns.html" class="dropdown-item fade-page">4 Columns</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="dropdown">
+                          <a href="#" class="dropdown-item dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">
+                            <span>Project Layouts</span>
+                            <img class="icon bg-dark opacity-20" src="assets/img/icons/interface/arrow-caret.svg" alt="arrow-caret interface icon" data-inject-svg />
+                          </a>
+                          <div class="dropdown-menu row">
+                            <div class="col-auto" data-dropdown-content>
+                              <div class="dropdown-grid-menu"><a href="portfolio-case-study.html" class="dropdown-item fade-page">Case Study</a><a href="portfolio-single-sidebar.html" class="dropdown-item fade-page">Sidebar</a><a href="portfolio-single-slider.html" class="dropdown-item fade-page">Slider</a>
+                                <a
+                                href="portfolio-single-parallax.html" class="dropdown-item fade-page">Parallax</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div> -->
                 </li>
               </ul>
             <!-- </div><a href="#" class="btn btn-primary ml-lg-3">Purchase Now</a> -->
@@ -123,7 +177,7 @@
       <div class="hero">
         <img class="backgroundimg" src="assets/img/committee_bg.jpg" alt="committee">
         <div class="overlay">
-          <p class="title">專題演講</p>
+          <p class="Sessiontitle">專題演講</p>
         </div>
       </div>
       <!-- <div class="decoration right middle-y scale-4">
@@ -131,7 +185,7 @@
       </div> -->
     </section>
      <div>
-      <div style="width: 100%; background-color: rgb(56, 61, 68); display: flex; align-items: center; justify-content: center; padding: 1.5rem 0;">
+      <div style="width: auto; background-color: rgb(56, 61, 68); display: flex; align-items: center; justify-content: center; padding: 1.5rem 0;">
       </div>
       <div class="container">
         <!--<br>
@@ -193,14 +247,14 @@
           <div class="col-xl-4 col-lg-4 col-md-6">
             <div class="card card-body align-items-center">
               <!-- <span class="badge badge-primary badge-top">Founder</span> -->
-              <center><img src="assets/img/Committees/JT-Melanie-Tory.jpeg" alt="Melanie Tory" class="avatar avatar-xlg mb-3"></center>
+              <center><img src="assets/img/person.jpg" alt="Melanie Tory" class="avatar avatar-xlg mb-3"></center>
               <center><h5 class="mb-0">Melanie Tory</h5></center>
               <center class="mt-2" style="font-size: 18px;"><span>Roux Institute at Northeastern University</span></center>
               <center class="mt-2" style="font-size: 18px;"><span>時間：2024/7/11 9:40am</span></center>
               <center class="mt-2" style="font-size: 18px;"><span>地點：台大資訊系館103演講廳</span></center>
-              <center class="mt-2" style="font-size: 18px;"><span>主持人:陽明交通大學王昱舜教授</span></center>
-              <h5 class="mt-2">Towards More Accessible Tools for Content Creation</h5>
-              <h5 class="mt-2">Abstract:</h5>
+              <center class="mt-2" style="font-size: 18px;"><span>主持人:陽明交通大學XXX教授</span></center>
+              <h5 style="font-size: 18px;" class="mt-2">Towards More Accessible Tools for Content Creation</h5>
+              <h5 style="font-size: 18px;" class="mt-2">Abstract:</h5>
               <span class="mt-2" style="color: black;font-size: 18px;">Traditional game and filming industries heavily rely on professional artists to make 
                 2D and 3D visual content. In contrast, future industries such as metaverse and 3D 
                 printing highly demand digital content from personal users. With modern software, 
@@ -211,28 +265,28 @@
           <div class="col-xl-4 col-lg-4 col-md-6">
             <div class="card card-body align-items-center">
               <!-- <span class="badge badge-primary badge-top">Founder</span> -->
-              <center><img src="assets/img/Committees/JT-ivan_Viola.jpeg" alt="Ivan Viola" class="avatar avatar-xlg mb-3"></center>
+              <center><img src="assets/img/person.jpg" alt="Ivan Viola" class="avatar avatar-xlg mb-3"></center>
               <center><h5 class="mb-0">Ivan Viola</h5></center>
               <center class="mt-2" style="font-size: 18px;"><span>Snap Research</span></center>
               <center class="mt-2" style="font-size: 18px;"><span>時間：2024/7/11 11:00am</span></center>
               <center class="mt-2" style="font-size: 18px;"><span>地點：台大資訊系館103演講廳</span></center>
-              <center class="mt-2" style="font-size: 18px;"><span>主持人:陽明交通大學劉育綸教授</span></center>
-              <h5 class="mt-2">3D/4D Generation and Modeling with Generative Priors</h5>
-              <h5 class="mt-2">Abstract:</h5>
+              <center class="mt-2" style="font-size: 18px;"><span>主持人:陽明交通大學XXX教授</span></center>
+              <h5 style="font-size: 18px;" class="mt-2">3D/4D Generation and Modeling with Generative Priors</h5>
+              <h5 style="font-size: 18px;" class="mt-2">Abstract:</h5>
               <span class="mt-2" style="color: black;font-size: 18px;">In the ever-expanding metaverse landscape, where physical and digital realms converge seamlessly, the imperative to capture, represent, and analyze three-dimensional structures is paramount. The evolution of 3D and 4D generation technologies has revolutionized applications such as gaming, augmented reality (AR), and virtual reality (VR), offering unparalleled immersion and interactivity. Bridging the gap between physical and digital domains, 3D modeling enables realistic simulations, immersive gaming experiences, and augmented reality overlays. Introducing the temporal dimension further enriches these experiences, enabling lifelike animations, object tracking, and understanding of complex spatiotemporal relationships, thus reshaping our digital interactions across entertainment, education, and beyond. The talk will offer a holistic exploration of 3D/4D generation and modeling, ranging from fundamental techniques to cutting-edge advancements. By navigating the intricacies of object- and scene-level generation and leveraging 2D priors for enhanced realism, attendees will emerge equipped with a nuanced understanding of the evolving landscape of 3D/4D modeling in the metaverse era.</span>
             </div>
           </div>
           <div class="col-xl-4 col-lg-4 col-md-6">
             <div class="card card-body align-items-center">
               <!-- <span class="badge badge-primary badge-top">Founder</span> -->
-              <img src="assets/img/Committees/JT-Yingcai_Wu.jpeg" alt="Yingcai Wu" class="avatar avatar-xlg mb-3">
+              <img src="assets/img/person.jpg" alt="Yingcai Wu" class="avatar avatar-xlg mb-3">
               <h5 class="mb-0">Yingcai Wu</h5>
               <center class="mt-2"><span>Zhejiang University</span></center>
               <center class="mt-2" style="font-size: 18px;"><span>時間：2024/7/11 4:40pm</span></center>
               <center class="mt-2" style="font-size: 18px;"><span>地點：台大資訊系館103演講廳</span></center>
-              <center class="mt-2" style="font-size: 18px;"><span>主持人:陽明交通大學林奕成教授</span></center>
-              <h5 class="mt-2">Controllable Visual Imagination</h5>
-              <h5 class="mt-2">Abstract:</h5>
+              <center class="mt-2" style="font-size: 18px;"><span>主持人:陽明交通大學XXX教授</span></center>
+              <h5 style="font-size: 18px;" class="mt-2">Controllable Visual Imagination</h5>
+              <h5 style="font-size: 18px;" class="mt-2">Abstract:</h5>
               <span class="mt-2" style="color: black;font-size: 18px;">Generative models have empowered human creators to visualize their imaginations without artistic skills and labor. A prominent example is large-scale text-to-image generation models. However, these models often are difficult to control and do not respect 3D perspective geometry. In this talk, I will showcase several of our recent efforts to improve controllability by leveraging physics-informed priors. Specifically, I will talk about how we improve semantic control for 2D image generations, generate realistic textures from reference images for 3D objects, and synthesize novel views, lighting, and weather for 3D scenes. </span>
               <br><br>
             </div>

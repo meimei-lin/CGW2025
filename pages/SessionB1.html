@@ -10,49 +10,7 @@
     <link href="assets/css/theme.css" rel="stylesheet" type="text/css" media="all" />
     <link rel="preload" as="font" href="assets/fonts/Inter-UI-upright.var.woff2" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" as="font" href="assets/fonts/Inter-UI.var.woff2" type="font/woff2" crossorigin="anonymous">
-    <style>
-      /* 設定圖片外層容器 */
-      .hero {
-        position: relative;
-        width: 100%;
-        height: auto;
-        background: none;
-      }
-
-      /* 確保圖片可自適應 */
-      .backgroundimg {
-        width: 100%;
-        height: auto;
-        display: block;
-        background: none;
-      }
-
-      /* 文字區塊（覆蓋在圖片上） */
-      .overlay {
-        position: absolute;
-        top: 50%;  /* 垂直置中 */
-        left: 50%; /* 水平置中 */
-        transform: translate(-50%, -50%); /* 精準置中 */
-        width: 100%;
-        text-align: center;
-      }
-      .overlay::before,
-      .overlay::after {
-        content: none !important;
-        background: none !important;
-        display: none !important;
-      }
-
-      /* 標題樣式 */
-      .title {
-        font-size: 6vw;
-        font-weight: 700;
-        color: rgb(251, 251, 253);
-        -webkit-text-stroke: 1px rgb(56, 61, 68);
-        text-shadow: 5px 5px 5px rgba(56, 61, 68);
-        font-family: 'Oswald', sans-serif;
-      }
-    </style>
+  
   </head>
 
   <body>
@@ -102,14 +60,110 @@
                     </div>
                   </div>
                 </li>
-                 <li class="nav-item dropdown">
-                  <a href="Contact-Pacific.html" class="nav-link dropdown-toggle"  aria-expanded="false" aria-haspopup="true">會議註冊</a>
+                <li class="nav-item dropdown">
+                  <a href="會議註冊.html" class="nav-link dropdown-toggle"  aria-expanded="false" aria-haspopup="true">會議註冊</a>
+                  <!-- <div class="dropdown-menu row">
+                    <div class="col-auto" data-dropdown-content>
+                      <div class="dropdown-grid-menu">
+                        <div class="dropdown">
+                          <a href="#" class="dropdown-item dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">
+                            <span>Grid Layouts</span>
+                            <img class="icon bg-dark opacity-20" src="assets/img/icons/interface/arrow-caret.svg" alt="arrow-caret interface icon" data-inject-svg />
+                          </a>
+                          <div class="dropdown-menu row">
+                            <div class="col-auto" data-dropdown-content>
+                              <div class="dropdown-grid-menu"><a href="portfolio-2-columns.html" class="dropdown-item fade-page">2 Columns</a><a href="portfolio-3-columns.html" class="dropdown-item fade-page">3 Columns</a><a href="portfolio-4-columns.html" class="dropdown-item fade-page">4 Columns</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="dropdown">
+                          <a href="#" class="dropdown-item dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">
+                            <span>Project Layouts</span>
+                            <img class="icon bg-dark opacity-20" src="assets/img/icons/interface/arrow-caret.svg" alt="arrow-caret interface icon" data-inject-svg />
+                          </a>
+                          <div class="dropdown-menu row">
+                            <div class="col-auto" data-dropdown-content>
+                              <div class="dropdown-grid-menu"><a href="portfolio-case-study.html" class="dropdown-item fade-page">Case Study</a><a href="portfolio-single-sidebar.html" class="dropdown-item fade-page">Sidebar</a><a href="portfolio-single-slider.html" class="dropdown-item fade-page">Slider</a>
+                                <a
+                                href="portfolio-single-parallax.html" class="dropdown-item fade-page">Parallax</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div> -->
                 </li>
                 <li class="nav-item dropdown">
-                  <a href="Contact-Pacific.html" class="nav-link dropdown-toggle"  aria-expanded="false" aria-haspopup="true">論文徵稿</a>
+                  <a href="論文徵稿.html" class="nav-link dropdown-toggle"  aria-expanded="false" aria-haspopup="true">論文徵稿</a>
+                  <!-- <div class="dropdown-menu row">
+                    <div class="col-auto" data-dropdown-content>
+                      <div class="dropdown-grid-menu">
+                        <div class="dropdown">
+                          <a href="#" class="dropdown-item dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">
+                            <span>Grid Layouts</span>
+                            <img class="icon bg-dark opacity-20" src="assets/img/icons/interface/arrow-caret.svg" alt="arrow-caret interface icon" data-inject-svg />
+                          </a>
+                          <div class="dropdown-menu row">
+                            <div class="col-auto" data-dropdown-content>
+                              <div class="dropdown-grid-menu"><a href="portfolio-2-columns.html" class="dropdown-item fade-page">2 Columns</a><a href="portfolio-3-columns.html" class="dropdown-item fade-page">3 Columns</a><a href="portfolio-4-columns.html" class="dropdown-item fade-page">4 Columns</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="dropdown">
+                          <a href="#" class="dropdown-item dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">
+                            <span>Project Layouts</span>
+                            <img class="icon bg-dark opacity-20" src="assets/img/icons/interface/arrow-caret.svg" alt="arrow-caret interface icon" data-inject-svg />
+                          </a>
+                          <div class="dropdown-menu row">
+                            <div class="col-auto" data-dropdown-content>
+                              <div class="dropdown-grid-menu"><a href="portfolio-case-study.html" class="dropdown-item fade-page">Case Study</a><a href="portfolio-single-sidebar.html" class="dropdown-item fade-page">Sidebar</a><a href="portfolio-single-slider.html" class="dropdown-item fade-page">Slider</a>
+                                <a
+                                href="portfolio-single-parallax.html" class="dropdown-item fade-page">Parallax</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div> -->
                 </li>
                 <li class="nav-item dropdown">
-                  <a href="Contact-Pacific.html" class="nav-link dropdown-toggle"  aria-expanded="false" aria-haspopup="true">交通資訊</a>
+                  <a href="交通資訊.html" class="nav-link dropdown-toggle"  aria-expanded="false" aria-haspopup="true">交通資訊</a>
+                  <!-- <div class="dropdown-menu row">
+                    <div class="col-auto" data-dropdown-content>
+                      <div class="dropdown-grid-menu">
+                        <div class="dropdown">
+                          <a href="#" class="dropdown-item dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">
+                            <span>Grid Layouts</span>
+                            <img class="icon bg-dark opacity-20" src="assets/img/icons/interface/arrow-caret.svg" alt="arrow-caret interface icon" data-inject-svg />
+                          </a>
+                          <div class="dropdown-menu row">
+                            <div class="col-auto" data-dropdown-content>
+                              <div class="dropdown-grid-menu"><a href="portfolio-2-columns.html" class="dropdown-item fade-page">2 Columns</a><a href="portfolio-3-columns.html" class="dropdown-item fade-page">3 Columns</a><a href="portfolio-4-columns.html" class="dropdown-item fade-page">4 Columns</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="dropdown">
+                          <a href="#" class="dropdown-item dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">
+                            <span>Project Layouts</span>
+                            <img class="icon bg-dark opacity-20" src="assets/img/icons/interface/arrow-caret.svg" alt="arrow-caret interface icon" data-inject-svg />
+                          </a>
+                          <div class="dropdown-menu row">
+                            <div class="col-auto" data-dropdown-content>
+                              <div class="dropdown-grid-menu"><a href="portfolio-case-study.html" class="dropdown-item fade-page">Case Study</a><a href="portfolio-single-sidebar.html" class="dropdown-item fade-page">Sidebar</a><a href="portfolio-single-slider.html" class="dropdown-item fade-page">Slider</a>
+                                <a
+                                href="portfolio-single-parallax.html" class="dropdown-item fade-page">Parallax</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div> -->
                 </li>
               </ul>
             <!-- </div><a href="#" class="btn btn-primary ml-lg-3">Purchase Now</a> -->
@@ -124,7 +178,7 @@
       <div class="hero">
         <img class="backgroundimg" src="assets/img/committee_bg.jpg" alt="committee">
         <div class="overlay">
-          <p class="title">SESSION B1</p>
+          <p class="Sessiontitle">SESSION B1</p>
         </div>
       </div>
       <!-- <div class="decoration right middle-y scale-4">
@@ -133,12 +187,12 @@
     </section>
     
      <div>
-      <div style="width: 100%; background-color: rgb(56, 61, 68); display: flex; align-items: center; justify-content: center; padding: 1.5rem 0;">
+      <div style="width: auto; background-color: rgb(56, 61, 68); display: flex; align-items: center; justify-content: center; padding: 1.5rem 0;">
       </div>
       <div class="container my-2 p-4">
         <div class="col">
           <center><h4>July 12, 9:10-10:10 資訊系館101教室</h4></center>
-          <center><h5>主持人:臺北科技大學韓秉軒教授</h5></center>
+          <center><h5>主持人:臺北科技大學XXX教授</h5></center>
         </div>
         <div class="col mt-6">
           <ol style="font-size: 18px;color: #000;">

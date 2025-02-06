@@ -10,79 +10,9 @@
     <link href="assets/css/theme.css" rel="stylesheet" type="text/css" media="all" />
     <link rel="preload" as="font" href="assets/fonts/Inter-UI-upright.var.woff2" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" as="font" href="assets/fonts/Inter-UI.var.woff2" type="font/woff2" crossorigin="anonymous">
-    <style>
-      /* 設定圖片外層容器 */
-      .hero {
-        position: relative;
-        width: 100%;
-        height: auto;
-        background: none;
-      }
-
-      /* 確保圖片可自適應 */
-      .backgroundimg {
-        width: 100%;
-        height: auto;
-        display: block;
-        background: none;
-      }
-
-      /* 文字區塊（覆蓋在圖片上） */
-      .overlay {
-        position: absolute;
-        top: 50%;  /* 垂直置中 */
-        left: 50%; /* 水平置中 */
-        transform: translate(-50%, -50%); /* 精準置中 */
-        width: 100%;
-        text-align: center;
-      }
-      .overlay::before,
-      .overlay::after {
-        content: none !important;
-        background: none !important;
-        display: none !important;
-      }
-
-      /* 標題樣式 */
-      .title {
-        font-size: 6vw;
-        font-weight: 700;
-        color: rgb(251, 251, 253);
-        font-family: 'Oswald', sans-serif;
-        
-      }
-
-    </style>
+   
   </head>
-  <script>
-    function includeHTML() {
-      var z, i, elmnt, file, xhttp;
-      /*loop through a collection of all HTML elements:*/
-      z = document.getElementsByTagName("*");
-      for (i = 0; i < z.length; i++) {
-        elmnt = z[i];
-        /*search for elements with a certain attribute:*/
-        file = elmnt.getAttribute("w3-include-html");
-        if (file) {
-          /*make an HTTP request using the attribute value as the file name:*/
-          xhttp = new XMLHttpRequest();
-          xhttp.onreadystatechange = function() {
-            if (this.readyState == 4) {
-              if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-              if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-              /*remove the attribute, and call this function once more:*/
-              elmnt.removeAttribute("w3-include-html");
-              includeHTML();
-            }
-          }      
-          xhttp.open("GET", file, true);
-          xhttp.send();
-          /*exit the function:*/
-          return;
-        }
-      }
-    };
-    </script>
+ 
   <body>
     <div class="loader">
       <div class="loading-animation"></div>
@@ -224,8 +154,8 @@
                     </div>
                   </div>
                 </li>
-                 <li class="nav-item dropdown">
-                  <a href="Contact-Pacific.html" class="nav-link dropdown-toggle"  aria-expanded="false" aria-haspopup="true">會議註冊</a>
+                <li class="nav-item dropdown">
+                  <a href="會議註冊.html" class="nav-link dropdown-toggle"  aria-expanded="false" aria-haspopup="true">會議註冊</a>
                   <!-- <div class="dropdown-menu row">
                     <div class="col-auto" data-dropdown-content>
                       <div class="dropdown-grid-menu">
@@ -260,7 +190,7 @@
                   </div> -->
                 </li>
                 <li class="nav-item dropdown">
-                  <a href="Contact-Pacific.html" class="nav-link dropdown-toggle"  aria-expanded="false" aria-haspopup="true">論文徵稿</a>
+                  <a href="論文徵稿.html" class="nav-link dropdown-toggle"  aria-expanded="false" aria-haspopup="true">論文徵稿</a>
                   <!-- <div class="dropdown-menu row">
                     <div class="col-auto" data-dropdown-content>
                       <div class="dropdown-grid-menu">
@@ -295,7 +225,7 @@
                   </div> -->
                 </li>
                 <li class="nav-item dropdown">
-                  <a href="Contact-Pacific.html" class="nav-link dropdown-toggle"  aria-expanded="false" aria-haspopup="true">交通資訊</a>
+                  <a href="交通資訊.html" class="nav-link dropdown-toggle"  aria-expanded="false" aria-haspopup="true">交通資訊</a>
                   <!-- <div class="dropdown-menu row">
                     <div class="col-auto" data-dropdown-content>
                       <div class="dropdown-grid-menu">
@@ -416,12 +346,12 @@
       <div class="hero">
         <img class="backgroundimg" src="assets/img/committee_bg.jpg" alt="committee">
         <div class="overlay">
-          <p class="title">會議組織</p>
+          <p class="Sessiontitle">會議組織</p>
         </div>
       </div>
       </section>
     <div>
-      <div style="width: 100%; background-color: rgb(56, 61, 68); display: flex; align-items: center; justify-content: center; padding: 1.5rem 0;">
+      <div style="width: auto; background-color: rgb(56, 61, 68); display: flex; align-items: center; justify-content: center; padding: 1.5rem 0;">
         <h2 style="color: aliceblue; font-size: 2rem; margin: 0;">組織架構</h2>
       </div>
       <br>
@@ -464,7 +394,7 @@
         </div>
     </div>
     
-    <div style="width: 100%; background-color: rgb(56, 61, 68); display: flex; align-items: center; justify-content: center; padding: 1.5rem 0;">
+    <div style="width: auto; background-color: rgb(56, 61, 68); display: flex; align-items: center; justify-content: center; padding: 1.5rem 0;">
       <h2 style="color: aliceblue; font-size: 2rem; margin: 0;">會議委員會</h2>
     </div>
     <br>
