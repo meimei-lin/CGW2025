@@ -14241,4 +14241,155 @@ article table {
 .docs-graphic:not(:hover) .btn {
   opacity: 0; }
 
+  /* 設定圖片外層容器 */
+  .hero {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: none;
+  }
+
+  /* 確保圖片可自適應 */
+  .backgroundimg {
+    width: 100%;
+    height: auto;
+    display: block;
+    background: none;
+  }
+
+  /* 文字區塊（覆蓋在圖片上） */
+  .overlay {
+    position: absolute;
+    top: 50%;  /* 垂直置中 */
+    left: 50%; /* 水平置中 */
+    transform: translate(-50%, -50%); /* 精準置中 */
+    width: 100%;
+    text-align: center;
+    background: none;
+  }
+  .overlay::before,
+  .overlay::after {
+    content: none !important;
+    background: none !important;
+    display: none !important;
+  }
+
+  /* 標題樣式 */
+  .title {
+    font-size: 5vw;
+    font-weight: auto;
+    color: rgb(8,8,18);
+    font-family: 'Trebuchet MS', sans-serif;
+    text-shadow:-1px -1px 0 #ecf1eb,
+          1px -1px 0 #efe4d1,
+          -1px 1px 0 #efe4d1,
+          1px 1px 0 #efe4d1;
+  }
+
+  /* 副標題樣式 */
+  .subtitle {
+    font-size: 5vw;
+    font-weight: auto;
+    color: rgb(8, 8, 18);
+    font-family: 'Trebuchet MS','Noto Sans TC';
+    text-shadow:-1px -1px 0 #ecf1eb,
+          1px -1px 0 #efe4d1,
+          -1px 1px 0 #efe4d1,
+          1px 1px 0 #efe4d1;
+  }
+  .container1 {
+    display: flex;
+    justify-content: center; /* 讓兩個區塊在水平方向居中 */
+    align-items: center;
+    color: #333;
+    text-align: center;
+  }
+
+  .info-block {
+    flex: 0 1 30%; /* 縮小區塊寬度以縮小間距 */
+    margin: 0 5px; /* 縮小左右間距 */
+  }
+
+  .info-block h3 {
+    margin-bottom: 10px;
+  }
+
+  .info-block p {
+    margin: 0;
+    font-size: 18px;
+  }
+
+  /* 響應式設計 */
+  @media (max-width: 768px) {
+    .container1 {
+      flex-direction: column;
+    }
+
+    .info-block {
+      margin: 10px 0;
+    }
+  }
+  .styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    background-color: rgb(81, 118, 188);
+    background-image: linear-gradient(
+      to top left,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2) 50%,
+      rgba(0, 0, 0, 0)
+    );
+    width:350px;
+  }
+
+  .styled:hover {
+    background-color: rgb(172, 163, 163);
+  }
+
+  .styled:active {
+    box-shadow:
+      inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+      inset 2px 2px 3px rgba(43, 37, 37);
+  }
+
+  /* 標題樣式 */
+  .Sessiontitle {
+    font-size: 7vw;
+    font-weight: auto;
+    color: rgb(251, 251, 253);
+    font-family: 'Trebuchet MS', sans-serif;
+    text-shadow:-1px -1px 0 #32383e,
+          1px -1px 0 #32383e,
+          -1px 1px 0 #32383e,
+          1px 1px 0 #32383e;
+    
+  }
+  .map-container {
+    width: 100%; /* 讓地圖充滿容器 */
+    max-width: 800px; /* 限制最大寬度，避免太大 */
+    margin: auto; /* 讓地圖置中 */
+  }
+
+  .map-container iframe {
+      width: 100%; /* 讓 iframe 充滿父容器 */
+      aspect-ratio: 4 / 3; /* 維持 4:3 的比例 */
+      border: 0;
+  }
+
+  @media (max-width: 600px) {
+      .map-container iframe {
+          aspect-ratio: 1 / 1; /* 在小螢幕上變成正方形 */
+      }
+  }
+  .image-container {
+    width: 100%; /* 讓地圖充滿容器 */
+    max-width: 800px; /* 限制最大寬度，避免太大 */
+    margin: auto; /* 讓地圖置中 */
+  }
+  
 /*# sourceMappingURL=theme.css.map */
