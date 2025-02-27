@@ -14252,7 +14252,7 @@ article table {
   /* 確保圖片可自適應 */
   .backgroundimg {
     width: 100%;
-    height: auto;
+    height: 30%;
     display: block;
     background: none;
   }
@@ -14276,7 +14276,7 @@ article table {
 
   /* 標題樣式 */
   .title {
-    font-size: 5vw;
+    font-size: 4vw;
     font-weight: auto;
     color: rgb(8,8,18);
     font-family: 'Trebuchet MS', sans-serif;
@@ -14288,7 +14288,7 @@ article table {
 
   /* 副標題樣式 */
   .subtitle {
-    font-size: 5vw;
+    font-size: 4vw;
     font-weight: auto;
     color: rgb(8, 8, 18);
     font-family: 'Trebuchet MS','Noto Sans TC';
